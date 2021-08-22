@@ -1,12 +1,12 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *  https://leetcode.com/problems/all-paths-from-source-to-target/
  *  
  *  level: medium
  *  ans: Use backtracking.
  */
-import java.util.ArrayList;
-import java.util.List;
-
 public class AllPathsSourceTarget {
 
     public static void main(String[] args) {

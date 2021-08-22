@@ -42,7 +42,7 @@ public class IntToEng {
     }
     
     
-    public String section(int num){
+    public String section(int num) {
         //System.out.println(num); 
         if(num == 0){
             return "";

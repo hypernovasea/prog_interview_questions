@@ -2,17 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/binary-watch/
+ *  https://leetcode.com/problems/binary-watch/
  *
- * Constraints
- * - The hour '12' is represented by 0.
- * - The minute must consist of 2 digits and contain a
- *      leading 0 if min < 10.
+ *  Constraints
+ *      - The hour '12' is represented by 0.
+ *      - The minute must consist of 2 digits and contain a leading 0 if min < 10.
  *
- * Ans: Use basic backtracking .
+ *  level: easy
+ *  ans: Use basic backtracking
  */
-
-
 public class BinaryWatch {
 
     public static void main(String[] args) {
