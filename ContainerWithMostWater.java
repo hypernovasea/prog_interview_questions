@@ -4,7 +4,7 @@
  *  https://leetcode.com/problems/container-with-most-water/
  *
  *  level: medium
- *  ans:
+ *  ans: sliding window
  */
 public class ContainerWithMostWater {
 
