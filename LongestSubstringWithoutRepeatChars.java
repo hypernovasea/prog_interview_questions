@@ -1,6 +1,13 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ *  Longest Substring without Repeating Characters
+ *  https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * 
+ *  level: medium
+ *  ans: sliding window
+ */
 public class LongestSubstringWithoutRepeatChars {
     
     public static void main(String[] args) {
