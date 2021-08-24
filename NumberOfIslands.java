@@ -2,14 +2,13 @@
 public class NumberOfIslands {
 	private int n;
     private int m;
-    
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		//create a grid for the graph
 	}
-	
-	
-    
+
+
+
     public int numIslands(char[][] grid) {
         int count = 0;
         n = grid.length;
@@ -21,10 +20,10 @@ public class NumberOfIslands {
                     DFSMarking(grid, i, j);
                     ++count;
                 }
-        }    
+        }
         return count;
     }
-    
+
     private void DFSMarking(char[][] grid, int i, int j) {
         if (i < 0 || j < 0 || i >= n || j >= m || grid[i][j] != '1') return;
         grid[i][j] = '0';

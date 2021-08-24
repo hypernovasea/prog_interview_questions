@@ -1,34 +1,33 @@
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 
 public class MergeMeetingTimes {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		List<Meeting> meetings = new ArrayList<Meeting>();
-		
+
 		meetings.add( new Meeting(0, 1) );
 		meetings.add( new Meeting(3, 5) );
 		meetings.add( new Meeting(4, 8) );
 		meetings.add( new Meeting(10, 12) );
 		meetings.add( new Meeting(9, 10) );
-		
+
 		meetings = mergeRanges(meetings);
 		for(Meeting m : meetings){
 			System.out.println(m.toString());
 		}
-		
+
 	}
 
-	
+
 	public static List<Meeting> mergeRanges(List<Meeting> meetings) {
 
 	    // sort by start times
 	    List<Meeting> sortedMeetings = new ArrayList<Meeting>(meetings);
-	    
+
 	    Collections.sort(sortedMeetings, new Comparator<Meeting>() {
 	        public int compare(Meeting m1, Meeting m2)  {
 	            return m1.startTime - m2.startTime;
@@ -55,9 +54,9 @@ public class MergeMeetingTimes {
 
 	    return mergedMeetings;
 	}
-	
-	
-	
+
+
+
 	public static class Meeting {
 
 	    int startTime;
@@ -73,5 +72,5 @@ public class MergeMeetingTimes {
 	        return String.format("(%d, %d)", startTime, endTime);
 	    }
 	}
-	
+
 }

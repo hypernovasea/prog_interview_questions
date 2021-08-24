@@ -2,11 +2,10 @@
 public class MaximumDepthOfBinaryTree {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 	}
 
-	
+
 	/**
 	 * Definition for a binary tree node.
 	 */
@@ -16,7 +15,7 @@ public class MaximumDepthOfBinaryTree {
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
-	 
+
 
     public static int maxDepth(TreeNode node) {
         if(node==null){
@@ -26,9 +25,9 @@ public class MaximumDepthOfBinaryTree {
             int right = maxDepth(node.right);
             return ( Math.max(left, right) + 1 );
         }
-        
-       
+
+
     }
-	    
-	
+
+
 }
