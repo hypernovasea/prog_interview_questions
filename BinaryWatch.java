@@ -21,9 +21,17 @@ public class BinaryWatch {
     }
 
     public static List<String> readBinaryWatch(int turnedOn) {
+        // create a list to contain all time strings
         List<String> times = new ArrayList<>();
-        for (int h=0; h<12; h++) {
-            for (int m=0; m<59; m++) {
+
+        // iterate thru hour possibilities
+        for (int h = 0; h < 12; h++) {
+
+            // iterate thru minute possibilities
+            for (int m = 0; m < 59; m++) {
+
+                // if the bits in the hour + bits the minutes == the number
+                //  of bits that can be turned on, add the string to list
                 if ((Integer.bitCount(h) + Integer.bitCount(m)) == turnedOn) {
                     times.add(String.format("%d:%02d", h, m));
                 }

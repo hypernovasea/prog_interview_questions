@@ -23,10 +23,10 @@ public class HighestProductOf3 {
 	
 	public static int highestProductof3(int[] nums) throws IllegalArgumentException {
 		
-		if(nums.length <= 2) 
+		if (nums.length <= 2) 
 			throw new IllegalArgumentException();
 		
-		if(nums.length == 3)
+		if (nums.length == 3)
 			return (nums[0]*nums[1]*nums[2]);
 		
 		int highest = Math.max(nums[0], nums[1]);
