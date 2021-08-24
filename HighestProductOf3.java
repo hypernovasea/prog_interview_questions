@@ -32,10 +32,10 @@ public class HighestProductOf3 {
 		int highest = Math.max(nums[0], nums[1]);
 		int lowest = Math.min(nums[0], nums[1]);
 		
-		int highest2 = nums[0]*nums[1];
-		int lowest2 = nums[0]*nums[1];
+		int highest2 = nums[0] * nums[1];
+		int lowest2 = nums[0] * nums[1];
 		
-		int highest3 = highest2*nums[2];
+		int highest3 = highest2 * nums[2];
 		
 		for (int i=2; i<nums.length; i++) {
 			
@@ -61,8 +61,8 @@ public class HighestProductOf3 {
 			// it's either the current lowest of 2,
 			// or it's the current times the highest,
 			// or it's the current times the lowest.
-			int prodLo2 = Math.min(lowest2, highest*N);
-			lowest2 = Math.min(prodLo2, lowest*N );
+			int prodLo2 = Math.min(lowest2, highest * N);
+			lowest2 = Math.min(prodLo2, lowest * N );
 			highest = Math.max(highest, N);
 			lowest = Math.min(lowest, N);
 		}
