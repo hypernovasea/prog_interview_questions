@@ -1,3 +1,10 @@
+/**
+ *  Multiply String
+ *  https://leetcode.com/problems/multiply-strings/
+ * 
+ *  level: medium
+ *  ans: use array manipulations and math tricks
+ */
 public class MultiplyStrings {
 
     public static void main(String[] args) {
