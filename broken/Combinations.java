@@ -1,3 +1,4 @@
+package broken;
 
 public class Combinations {
 
@@ -28,7 +29,6 @@ public class Combinations {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Combinations combo = new Combinations("abcd");
 		combo.combine();
 	}

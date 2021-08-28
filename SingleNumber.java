@@ -6,8 +6,6 @@ import java.util.*;
 public class SingleNumber {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		int[] nums = {4, 6, 7, 8, 4, 8, 6};
 		System.out.print( singleNumber(nums) );
 	}
