@@ -1,4 +1,3 @@
-package broken;
 import java.util.*;
 
 public class HuffmanCoding {
