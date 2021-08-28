@@ -14,7 +14,8 @@ public class HighestProductOf3 {
 			System.out.println("Array C --> " + highestProductof3(c) + "\n\n");
 			System.out.println("Array D --> " + highestProductof3(d) + "\n\n");
 			
-		} catch(Exception e) {
+		} 
+        catch (Exception e) {
 			System.out.println("Array has length less than 3!!");
         }
 	}
