@@ -1,4 +1,5 @@
-package src;
+package src.medium;
+
 /**
  *  Rotate Image
  *  https://leetcode.com/problems/rotate-image/

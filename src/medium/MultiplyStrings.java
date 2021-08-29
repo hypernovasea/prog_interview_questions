@@ -1,4 +1,5 @@
-package src;
+package src.medium;
+
 /**
  *  Multiply String
  *  https://leetcode.com/problems/multiply-strings/
