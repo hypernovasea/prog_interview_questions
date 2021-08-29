@@ -1,4 +1,5 @@
-package src;
+package src.misc;
+
 import java.util.Random;
 
 

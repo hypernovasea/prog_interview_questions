@@ -1,4 +1,4 @@
-package src;
+package src.misc;
 
 public class StringCompress {
 	public static void main(String[] args){
@@ -16,14 +16,14 @@ public class StringCompress {
 
 		StringBuilder strb = new StringBuilder();
 		int count = 0;
-		for(int i=0; i<c.length(); i++){
+		for (int i=0; i<c.length(); i++) {
 
-			if((i+1) != c.length() ){
+			if ((i+1) != c.length()) {
 				int c1 = c.charAt(i);
 				int c2 = c.charAt(i+1);
 
 				count++;
-				if(c1 != c2){
+				if (c1 != c2) {
 					strb.append(""+ c.charAt(i) +count);
 					count = 0;
 				}

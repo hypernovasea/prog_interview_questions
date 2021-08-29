@@ -1,4 +1,5 @@
-package src;
+package src.misc;
+
 import java.util.Arrays;
 
 
@@ -14,7 +15,7 @@ public class ProductExceptSelf {
         
         int N = nums.length;
         
-        if(N == 0 || N == 1)
+        if (N == 0 || N == 1)
             return nums;
         
         int[] copy = new int[N];
@@ -42,13 +43,13 @@ public class ProductExceptSelf {
         
         copy[0] = 1;
         
-        for(int i=1; i<N; i++){
+        for (int i=1; i<N; i++) {
             copy[i] = copy[i-1] * nums[i-1];
         }
         
         int right = 1;
         
-        for(int j=N-1; j>=0; j--){
+        for (int j=N-1; j>=0; j--) {
         	copy[j] *= right;
             right *= nums[j];
         }

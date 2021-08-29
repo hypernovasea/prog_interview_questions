@@ -1,12 +1,11 @@
-package src;
+package src.misc;
+
 /**
  * This class chooses the max number of intervals or
  * activities a person can do by scheduling intervals 
  * with the earliest finish time.
  * 
  */
-
-
 public class MaxScheduling {
 
 	public static void main(String[] args){
@@ -25,8 +24,8 @@ public class MaxScheduling {
 		int i = 0;
 		System.out.print(i + " ");
 		
-		for(int j=1; j<n; j++){
-			if(s[j] >= f[i]){
+		for (int j=1; j<n; j++){ 
+			if (s[j] >= f[i]) {
 				System.out.print(j + " ");
 				i=j;
 			}

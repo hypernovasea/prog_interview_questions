@@ -1,4 +1,4 @@
-package src;
+package src.misc;
 
 /**
  *  Given a positive integer, i, return the English equivalent.

@@ -40,13 +40,13 @@ public class MedianOfTwoSortedArrays {
         int count2 = 0;
         
         //for 0 to the combined length of both arrays
-        for(int i=0; i < length; i++) {
+        for (int i=0; i < length; i++) {
         	
         	//if the length of both arrays are greater than 0
-            if(!adddedAllN1 && !adddedAllN2) {
+            if (!adddedAllN1 && !adddedAllN2) {
             	
             	//if num in second array is greater than num in first array
-                if(nums1[count1] <  nums2[count2]) {
+                if (nums1[count1] <  nums2[count2]) {
                 	
                 	//set the current index to the first num and increment 
                 	// counter of the first array
@@ -84,12 +84,11 @@ public class MedianOfTwoSortedArrays {
         }
         
         //if the combined length of the arrays is even
-        if(length % 2 == 0) {
-        	
-        	//calculte the middle of the array
-            return (double) (all[length/2] + all[(length/2) - 1])/2;
-        } else {
-        	
+        if (length % 2 == 0) {
+        	//calculate the middle of the array
+            return (double)(all[length/2] + all[(length/2) - 1])/2;
+        } 
+        else {
         	//return the middle index of the array
             return all[(int)Math.floor(length/2)];
         }

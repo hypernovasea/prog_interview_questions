@@ -1,4 +1,4 @@
-package src;
+package src.misc;
 
 public class MaxProductSubarray {
 
@@ -6,8 +6,6 @@ public class MaxProductSubarray {
 		int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
 		System.out.println( maxProduct(nums) );
 	}
-
-
 
 
 	public static int maxProduct(int[] nums) {
@@ -22,7 +20,7 @@ public class MaxProductSubarray {
         int finalMax = max;
 
 
-        for(int i=1; i<N; i++){
+        for (int i=1; i<N; i++) {
 
             int temp = max; //hold current value of max
 

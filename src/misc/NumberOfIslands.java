@@ -1,4 +1,4 @@
-package src;
+package src.misc;
 
 public class NumberOfIslands {
 	private int n;
@@ -7,8 +7,7 @@ public class NumberOfIslands {
 	public static void main(String[] args) {
 		//create a grid for the graph
 	}
-
-
+    
 
     public int numIslands(char[][] grid) {
         int count = 0;

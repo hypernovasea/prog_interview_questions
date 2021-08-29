@@ -1,4 +1,4 @@
-package src;
+package src.misc;
 import java.util.*;
 
 //Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -24,7 +24,7 @@ public class TwoSum {
         
         for (int i=0; i<N; i++){
             int recip = target-nums[i];
-            if (map.containsKey( recip )) {
+            if (map.containsKey(recip)) {
                 indices[0] = map.get(recip);
                 indices[1] = i;
                 break;

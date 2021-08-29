@@ -1,4 +1,4 @@
-package src;
+package src.misc;
 
 public class MaximumSubarray {
 
@@ -6,6 +6,7 @@ public class MaximumSubarray {
 		int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
 		System.out.println( maxSubArray(nums) );
 	}
+
 
 	public static int maxSubArray(int[] nums) {
 
@@ -18,12 +19,13 @@ public class MaximumSubarray {
         int max = nums[0];
         memo[0] = max;
 
-        for(int i=1; i<N; i++){
+        for (int i=1; i<N; i++) {
             int total = memo[i-1] + nums[i];
 
-            if(total > nums[i]){    //extend window
+            if (total > nums[i]) {    //extend window
                 memo[i] = total;
-            }else{                  //start new window
+            } 
+            else {                  //start new window
                 memo[i] = nums[i];
             }
 
