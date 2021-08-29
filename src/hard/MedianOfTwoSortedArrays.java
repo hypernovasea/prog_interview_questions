@@ -1,4 +1,4 @@
-package src;
+package src.hard;
 
 /**
  *  Median of Two Sorted Arrays
