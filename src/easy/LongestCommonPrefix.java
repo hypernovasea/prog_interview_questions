@@ -1,4 +1,4 @@
-package src;
+package src.easy;
 
 /**
  *  Longest Common Prefix

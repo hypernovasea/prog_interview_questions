@@ -1,4 +1,4 @@
-package src;
+package src.easy;
 
 //Add two numbers without using the + operator. 
 
