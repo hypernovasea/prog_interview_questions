@@ -1,3 +1,5 @@
+package broken;
+
 import java.util.*;
 
 public class HuffmanCoding {
@@ -186,10 +188,10 @@ public class HuffmanCoding {
 	public static void main(String[] args) {
 
 		int[] frequencies = new int[27];	// 26 chars
-		double[] freqs = {0.0, 8.47,1.49,2.78,4.25,12.70,2.23,2.02,
-						6.09,6.97,0.15,0.77,4.03,2.41,6.75,
-						7.51,1.93,0.10,5.99,6.33,9.06,2.76,
-						0.98,2.36,0.15,1.97,0.07};
+		// double[] freqs = {0.0, 8.47,1.49,2.78,4.25,12.70,2.23,2.02,
+		// 				6.09,6.97,0.15,0.77,4.03,2.41,6.75,
+		// 				7.51,1.93,0.10,5.99,6.33,9.06,2.76,
+		// 				0.98,2.36,0.15,1.97,0.07};
 		
 		HashMap<String, Integer> alpha = new HashMap<String, Integer>();
 		alpha = alphaHashMap(alpha);
@@ -210,7 +212,7 @@ public class HuffmanCoding {
 		
 		//HuffmanCoding cd = new HuffmanCoding(frequencies);
 		
-		HuffmanCoding cd2 = new HuffmanCoding(freqs);
+		// HuffmanCoding cd2 = new HuffmanCoding(freqs);
 		
 	}
 
