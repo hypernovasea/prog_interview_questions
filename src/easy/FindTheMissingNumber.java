@@ -26,7 +26,8 @@ public class FindTheMissingNumber {
             // num i is not in correct position and is within array bounds
             if (nums[i] < nums.length && nums[i] != nums[nums[i]]) {
                 swap(nums, i, nums[i]);
-            } else {
+            } 
+            else {
                 // nums[i] is in position so move on
                 i++; 
             }
