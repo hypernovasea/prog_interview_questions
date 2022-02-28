@@ -1,4 +1,4 @@
-package broken;
+package src.broken;
 
 public class Combinations {
 
